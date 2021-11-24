@@ -1,0 +1,59 @@
+#CartItem {
+	width: 100%;
+	flex: 0 0 0;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+#CartItem > #ItemDescription {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#CartItem > #ItemDescription > #NameCard {
+	flex: 0 0 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+#CartItem > #ItemDescription > #NameCard > h1 {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+#CartItem > #ItemDescription > #NameCard > h2 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+#CartItem > #ItemDescription > #PriceTag {
+	margin: 26px 0;
+	flex: 0 0 0;
+
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 18px;
+}
+
+#CartItem > #ItemDescription > #ItemAttributes {
+	flex: 0 0 45px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+#CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes {
+	flex: 0 0 63px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

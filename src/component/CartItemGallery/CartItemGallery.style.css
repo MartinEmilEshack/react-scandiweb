@@ -1,0 +1,65 @@
+#CartItemGallery {
+	flex: 0 0 141px;
+
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+#CartItemGallery > #ImagePreview {
+	flex: 0 0 100%;
+	height: 100%;
+	border: none;
+	position: relative;
+}
+
+#CartItemGallery > #ImagePreview > img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: contain;
+}
+
+#CartItemGallery > button {
+	width: 32px;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	border: none;
+	background-color: transparent;
+}
+
+#CartItemGallery > #Left {
+	padding-right: 12px;
+	left: 0;
+}
+
+#CartItemGallery > #Right {
+	padding-left: 12px;
+	right: 0;
+}
+
+#CartItemGallery > #Left:hover:enabled {
+	background: linear-gradient(to left, transparent 12px, gray 100%);
+}
+
+#CartItemGallery > #Right:hover:enabled {
+	background: linear-gradient(to right, transparent 12px, gray 100%);
+}
+
+#CartItemGallery > button > img {
+	width: 100%;
+	object-fit: contain;
+}
+
+#CartItemGallery > button:disabled > img {
+	display: none;
+}
+
+#CartItemGallery > #Left > img {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

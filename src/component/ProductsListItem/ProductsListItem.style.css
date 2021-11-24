@@ -1,0 +1,96 @@
+#ProductsListItem {
+	padding: 16px;
+	height: 444px;
+	flex: 0 0 386px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+
+	text-decoration: none;
+	background-color: white;
+	transition-duration: 0.4s;
+}
+
+#ProductsListItem:hover {
+	box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+#ProductsListItem > #Stack {
+	width: 354px;
+	height: 330px;
+	position: relative;
+	background-color: #8d8f9a;
+}
+
+#ProductsListItem > #Stack > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#ProductsListItem > #Stack > #OutOfStockOverlay {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 160%;
+	text-transform: uppercase;
+	color: #8d8f9a;
+
+	opacity: 0.5;
+	background-color: white;
+}
+
+#ProductsListItem > #Stack > #InCart {
+	bottom: 0;
+	right: 15px;
+	position: absolute;
+	transform: translate(0%, 50%);
+	width: 52px;
+	height: 52px;
+
+	object-fit: scale-down;
+	border-radius: 50%;
+	background-color: #5ece7b;
+}
+
+#ProductsListItem > #ProductProperties {
+	width: 100%;
+	flex: 1 0 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#ProductsListItem > #ProductProperties > #Name {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 160%;
+}
+
+#ProductsListItem > #ProductProperties > #PriceTag {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 160%;
+}
+
+.InStock {
+	color: #1d1f22;
+}
+
+.OutOfStock {
+	color: #8d8f9a;
+}

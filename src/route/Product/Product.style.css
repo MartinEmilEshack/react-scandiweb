@@ -1,0 +1,92 @@
+#Product {
+	margin: auto 0;
+	padding: 16px;
+	width: 90%;
+
+	flex: 0 0 80%;
+	align-self: center;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 30px;
+
+	background-color: white;
+}
+
+#Product > #ProductDescription {
+	height: 100%;
+	flex: 1 0 40%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+#Product > #ProductDescription > #NameCard {
+	flex: 0 0 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+#Product > #ProductDescription > #NameCard > h1 {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+#Product > #ProductDescription > #NameCard > h2 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 27px;
+}
+
+#Product > #ProductDescription > #Price {
+	flex: 0 0 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#Product > #ProductDescription > #Price > h3 {
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+#Product > #ProductDescription > button {
+	width: 292px;
+	flex: 0 0 52px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: white;
+	text-transform: uppercase;
+
+	border: none;
+	background-color: #5ece7b;
+	transition-duration: 0.4s;
+}
+
+#Product > #ProductDescription > button:enabled:hover {
+	background-color: #48a05f;
+}
+
+#Product > #ProductDescription > button:disabled {
+	background-color: #a3caad;
+}
+
+#Product > #ProductDescription > #Description * {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 159.96%;
+}

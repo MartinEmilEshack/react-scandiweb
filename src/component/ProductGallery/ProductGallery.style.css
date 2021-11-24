@@ -1,0 +1,46 @@
+#ProductGallery {
+	height: 100%;
+	flex: 1 1 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+#ProductGallery > #GalleryList {
+	height: 100%;
+	flex: 0 0 80px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	overflow-y: auto;
+}
+
+#ProductGallery > #GalleryList > #GalleryImage {
+	width: 100%;
+	flex: 0 0 80px;
+	position: relative;
+}
+
+#ProductGallery > #GalleryList > #GalleryImage > img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+
+#ProductGallery > #GalleryPreview {
+	height: 100%;
+	flex: 1 1 100%;
+	position: relative;
+}
+
+#ProductGallery > #GalleryPreview > img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	object-fit: contain;
+}

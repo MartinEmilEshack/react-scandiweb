@@ -1,0 +1,30 @@
+#ProductAttribute {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#ProductAttribute > h1 {
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+#ProductAttribute > #Choices {
+	flex: 0 0 45px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+#ProductAttribute > #Choices > #ChoiceItem {
+	flex: 0 0 63px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

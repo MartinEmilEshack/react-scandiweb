@@ -1,0 +1,41 @@
+#CartMenu #CartItem {
+	gap: 10px;
+}
+
+#CartMenu #CartItem > #ItemDescription > #NameCard {
+	gap: 0px;
+}
+
+#CartMenu #CartItem > #ItemDescription > #NameCard > h1,
+#CartMenu #CartItem > #ItemDescription > #NameCard > h2 {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+#CartMenu #CartItem > #ItemDescription > #PriceTag {
+	margin: 5px 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+#CartMenu #CartItem > #ItemDescription > #ItemAttributes {
+	flex: 0 0 24px;
+}
+
+#CartMenu #CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes {
+	flex: 0 0 24px;
+}
+
+#CartMenu #CartItem > #CartItemCount {
+	flex: 0 0 24px;
+}
+
+#CartMenu #CartItem > #CartItemCount > button {
+	flex: 0 0 24px;
+}
+
+#CartMenu #CartItem > #CartItemGallery {
+	flex: 0 0 105px;
+}

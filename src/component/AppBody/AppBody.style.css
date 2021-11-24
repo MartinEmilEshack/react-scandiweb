@@ -1,0 +1,21 @@
+#AppBody {
+	width: 100%;
+	padding: 0 5%;
+	flex: 1 1 100%;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#BodyOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(57, 55, 72, 0.22);
+	z-index: 2;
+}

@@ -1,0 +1,186 @@
+@import 'CartItem.style.css';
+@import 'CartItemCounter.style.css';
+@import 'SwatchItem.style.css';
+@import 'TextItem.style.css';
+
+#CartMenu {
+	height: 100%;
+}
+
+#CartMenu > #CartMenuButton {
+	height: 100%;
+	padding: 0 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	border-width: 0px;
+	background-color: transparent;
+	transition-duration: 0.4s;
+}
+
+#CartMenu > #CartMenuButton:hover {
+	border-radius: 5px;
+	background-color: #ddd;
+}
+
+#CartMenu > #CartMenuButton > img {
+	height: 20px;
+	width: 20px;
+}
+
+#CartMenu > #CartMenuButton > #CartMenuCounter {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	transform: translate(13px, -8px);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	border-radius: 60px;
+	border-width: 0px;
+	color: white;
+	background-color: #1d1f22;
+}
+
+#CartMenu > #CartMenuDropdown {
+	/*	margin-top: 26px; temporary */
+	padding: 20px;
+	width: 325px;
+
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	transform: translateX(calc(-100% + 36px));
+
+	list-style-type: none;
+	background-color: white;
+	filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuTitle {
+	flex-direction: 0 0 0;
+	margin-top: -12px;
+	margin-bottom: 23px;
+
+	display: flex;
+	flex-direction: row;
+
+	font-style: mixed;
+	font-size: 16px;
+	line-height: 160%;
+	text-align: right;
+}
+
+#CartMenu > #CartMenuDropdown > #CartItems {
+	width: 100%;
+	max-height: 330px;
+	flex: 0 0 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 41px;
+
+	overflow-y: auto;
+}
+
+#CartMenu > #CartMenuDropdown > #TotalPrice {
+	width: 100%;
+	flex: 0 0 28px;
+	margin: 28px 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+}
+
+#CartMenu > #CartMenuDropdown > #TotalPrice > h2 {
+	flex: 1 1 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+#CartMenu > #CartMenuDropdown > #TotalPrice > #PriceTag {
+	flex: 1 1 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: right;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons {
+	width: 100%;
+	flex: 0 0 43px;
+
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > button {
+	height: 100%;
+	flex: 1 1 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 120%;
+	text-transform: uppercase;
+
+	transition-duration: 0.4s;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > #ViewBag {
+	border: 1px solid #1d1f22;
+	background-color: white;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > #ViewBag:hover {
+	background-color: #ddd;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > #Checkout {
+	color: white;
+	border: none;
+	background-color: #5ece7b;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > #Checkout:enabled:hover {
+	background-color: #48a05f;
+}
+
+#CartMenu > #CartMenuDropdown > #CartMenuButtons > #Checkout:disabled {
+	display: none;
+}

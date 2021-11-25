@@ -6,6 +6,7 @@ import CartItem from '../CartItem';
 import PriceTag from '../PriceTag';
 import { setBodyOverlay } from '../../store/body_overlay';
 import './CartMenu.style.css';
+import { checkoutItems } from '../../query/CheckoutItems.query';
 
 class CartMenu extends Component {
 	state = { menuOpen: false };
@@ -43,7 +44,11 @@ class CartMenu extends Component {
 						<button id='ViewBag' onClick={() => history.push('/cart')}>
 							view bag
 						</button>
-						<button id='Checkout' disabled={noItems}>checkout</button>
+						<button
+							id='Checkout'
+							disabled={noItems}
+							onClick={() => checkoutItems(items)}
+						>checkout</button>
 					</div>
 				</div>
 			</div >

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CartItem from '../../component/CartItem';
 import PriceTag from '../../component/PriceTag';
+import { checkoutItems } from '../../query/CheckoutItems.query';
 import './Cart.style.css';
 
 class Cart extends Component {
@@ -27,7 +28,11 @@ class Cart extends Component {
 				<div id='TotalPrice'>
 					<h2>Total</h2>
 					<PriceTag total />
-					<button id='Checkout' disabled={noItems}>checkout</button>
+					<button
+						id='Checkout'
+						disabled={noItems}
+						onClick={() => checkoutItems(items)}
+					>checkout</button>
 				</div>
 			</div>
 		);

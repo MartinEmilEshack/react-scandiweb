@@ -5,7 +5,7 @@ export const getAPIProductsList = (category) => {
 		.addArgument('input', 'CategoryInput', { title: category })
 		.addField('name')
 		.addField(new Field('products')
-			.addFieldList(['id', 'name', 'inStock', 'gallery'])
+			.addFieldList(['id', 'name', 'brand', 'inStock', 'gallery'])
 			.addField(new Field('prices').addFieldList(['currency', 'amount']))
 		);
 	client.setEndpoint('http://localhost:4000/');

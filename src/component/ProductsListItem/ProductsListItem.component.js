@@ -8,7 +8,7 @@ import './ProductsListItem.style.css';
 class ProductsListItem extends Component {
 	render() {
 		const { product, inCart } = this.props;
-		const { id, name, gallery, inStock, prices } = product;
+		const { id, name, brand, gallery, inStock, prices } = product;
 
 		return (
 			<Link id='ProductsListItem' to={'/products/' + id} >
@@ -18,7 +18,7 @@ class ProductsListItem extends Component {
 					<img id={inCart ? 'InCart' : 'Deactivate'} src={ShoppingCartWhite} alt='Cart' />
 				</div>
 				<div id='ProductProperties' className={inStock ? 'InStock' : 'OutOfStock'}>
-					<h2 id='Name'>{name}</h2>
+					<h2 id='Name'>{name} {brand}</h2>
 					<PriceTag prices={prices} />
 				</div>
 			</Link>

@@ -13,8 +13,9 @@ class CurrencyMenu extends Component {
 		this.props.setCurrency(this.props.currencies[0]);
 	};
 
-	changeCurrency = (currency) => {
+	onCurrencySelected = (currency) => {
 		this.props.setCurrency(currency);
+		this.setState(() => ({ menuOpen: false }));
 	};
 
 	getSign = (currency) => {
@@ -33,7 +34,7 @@ class CurrencyMenu extends Component {
 		const currencyOptions = currencies.map((currency, index) => {
 			const sign = this.getSign(currency);
 			return (
-				<li key={index} onClick={() => this.changeCurrency(currency)}>
+				<li key={index} onClick={() => this.onCurrencySelected(currency)}>
 					{sign + ' ' + currency}
 				</li>
 			);

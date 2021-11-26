@@ -45,18 +45,16 @@
 
 #Cart > #CartItemWrapper > hr {
 	margin: 20px 0;
-	flex: 0 0 1px;
-	border-width: 0;
-	background-color: #e5e5e5;
+	border: none;
+	border-top: thin solid #e5e5e5;
 }
 
 #Cart > hr {
 	margin-top: 28px;
 	margin-bottom: 16px;
 
-	flex: 0 0 1px;
-	border-width: 0px;
-	background-color: #e5e5e5;
+	border: none;
+	border-top: thin solid #e5e5e5;
 }
 
 #Cart > #TotalPrice {

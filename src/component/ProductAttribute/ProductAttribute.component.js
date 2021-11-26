@@ -6,14 +6,14 @@ import TextItem from '../TextAttributeItem';
 class ProductAttribute extends Component {
 
 	componentDidMount() {
-		const { onAttributeChange, attribute: { id, type, items } } = this.props;
+		const { onAttributeChange, attribute: { id, name, type, items } } = this.props;
 		const { id: itemID, value, displayValue } = items[0];
-		onAttributeChange(id, { type, id: itemID, value, displayValue });
+		onAttributeChange(id, { name, type, id: itemID, value, displayValue });
 	}
 
 	getAttributeChoices = () => {
 		const {
-			attribute: { id, type, items },
+			attribute: { id, type, name, items },
 			onAttributeChange,
 			selectedAttributes,
 		} = this.props;
@@ -33,7 +33,7 @@ class ProductAttribute extends Component {
 				<div
 					key={index}
 					id='ChoiceItem'
-					onClick={() => onAttributeChange(id, { type, id: itemID, value, displayValue })}
+					onClick={() => onAttributeChange(id, { name, type, id: itemID, value, displayValue })}
 				>{choiceItem}</div>
 			);
 		});

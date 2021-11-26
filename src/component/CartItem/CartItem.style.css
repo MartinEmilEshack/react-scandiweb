@@ -42,8 +42,6 @@
 }
 
 #CartItem > #ItemDescription > #ItemAttributes {
-	flex: 0 0 45px;
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -51,8 +49,25 @@
 }
 
 #CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes {
-	flex: 0 0 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
 
+#CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes > h1 {
+	margin: 5px 0;
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+#CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes > #Item {
+	min-width: 63px;
+	width: fit-content;
+	height: 45px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

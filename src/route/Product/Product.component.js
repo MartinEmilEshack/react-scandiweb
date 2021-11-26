@@ -82,9 +82,7 @@ class Product extends Component {
 					<button
 						disabled={!product.inStock}
 						onClick={this.addProductToCart.bind(this)}
-					>
-						{product.inStock ? 'add to cart' : 'out of stock'}
-					</button>
+					>{product.inStock ? 'add to cart' : 'out of stock'}</button>
 					<div id='Description' dangerouslySetInnerHTML={{ __html: product.description }} />
 				</div>
 			</div>

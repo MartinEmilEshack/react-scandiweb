@@ -10,14 +10,19 @@ class CartItem extends Component {
 
 	getSelectedAttributes = (attributes) => {
 		const attributeValues = Object.values(attributes);
-		return attributeValues.map(({ type, value, displayValue }, index) => {
+		return attributeValues.map(({ name, type, value, displayValue }, index) => {
 			let choiceItem = null;
 			if (type === 'text')
 				choiceItem = <TextItem text={value} checked />;
 			else if (type === 'swatch')
 				choiceItem = <SwatchItem color={value} text={displayValue} checked />;
 
-			return <div key={index} id='SelectedAttributes'>{choiceItem}</div>;
+			return (
+				<div key={index} id='SelectedAttributes'>
+					<h1>{name}:</h1>
+					<div id='Item'>{choiceItem}</div>
+				</div>
+			);
 		});
 	};
 

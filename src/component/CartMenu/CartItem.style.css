@@ -20,12 +20,24 @@
 	line-height: 160%;
 }
 
-#CartMenu #CartItem > #ItemDescription > #ItemAttributes {
-	flex: 0 0 24px;
+#CartMenu
+	#CartItem
+	> #ItemDescription
+	> #ItemAttributes
+	> #SelectedAttributes
+	> h1 {
+	margin: 3px 0;
+	font-size: 15px;
 }
 
-#CartMenu #CartItem > #ItemDescription > #ItemAttributes > #SelectedAttributes {
-	flex: 0 0 24px;
+#CartMenu
+	#CartItem
+	> #ItemDescription
+	> #ItemAttributes
+	> #SelectedAttributes
+	> #Item {
+	min-width: fit-content;
+	height: 24px;
 }
 
 #CartMenu #CartItem > #CartItemCount {

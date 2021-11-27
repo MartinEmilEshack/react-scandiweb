@@ -19,10 +19,11 @@ class CurrencyMenu extends Component {
 	};
 
 	getSign = (currency) => {
-		return new Intl.NumberFormat('en-US', {
+		let sign = new Intl.NumberFormat('ru-RU', {
 			style: 'currency',
 			currency: currency
-		}).format(0).split('0')[0];
+		}).format(0).split('0');
+		return sign[sign.length - 1];
 	};
 
 	render() {

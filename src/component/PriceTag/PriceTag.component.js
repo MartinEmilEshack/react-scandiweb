@@ -5,10 +5,12 @@ import './PriceTag.css';
 class PriceTag extends Component {
 
 	getCurrencySign = (selectedCurrency) => {
-		return selectedCurrency ? new Intl.NumberFormat('en-US', {
+		if (!selectedCurrency) return '';
+		let sign = new Intl.NumberFormat('ru-RU', {
 			style: 'currency',
 			currency: selectedCurrency
-		}).format(0).split('0')[0] : '';
+		}).format(0).split('0');
+		return sign[sign.length - 1];
 	};
 
 	render() {

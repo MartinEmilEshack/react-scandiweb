@@ -5,8 +5,12 @@ export const getAPIProductsList = (category) => {
 		.addArgument('input', 'CategoryInput', { title: category })
 		.addField('name')
 		.addField(new Field('products')
-			.addFieldList(['id', 'name', 'brand', 'inStock', 'gallery'])
+			.addFieldList(['id', 'name', 'inStock', 'gallery', 'brand'])
 			.addField(new Field('prices').addFieldList(['currency', 'amount']))
+			.addField(new Field('attributes')
+				.addFieldList(['id', 'name', 'type'])
+				.addField(new Field('items').addFieldList(['id', 'value', 'displayValue']))
+			)
 		);
 	client.setEndpoint('http://localhost:4000/');
 	return client.post(productsQuery);

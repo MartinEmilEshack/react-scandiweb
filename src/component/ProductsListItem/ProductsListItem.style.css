@@ -52,17 +52,30 @@
 	background-color: white;
 }
 
-#ProductsListItem > #Stack > #InCart {
+#ProductsListItem > #Stack > #AddToCart {
 	bottom: 0;
 	right: 15px;
 	position: absolute;
 	transform: translate(0%, 50%);
 	width: 52px;
 	height: 52px;
+	display: none;
 
 	object-fit: scale-down;
 	border-radius: 50%;
+	border-width: 0;
 	background-color: #5ece7b;
+	transition-duration: 0.4s;
+}
+
+#ProductsListItem:hover > #Stack > #AddToCart:enabled {
+	display: block;
+}
+
+#ProductsListItem:hover > #Stack > #AddToCart:enabled:hover {
+	cursor: pointer;
+	display: block;
+	background-color: #48a05f;
 }
 
 #ProductsListItem > #ProductProperties {

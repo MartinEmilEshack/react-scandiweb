@@ -113,6 +113,7 @@
 }
 
 #Cart > #TotalPrice > #Checkout:enabled:hover {
+	cursor: pointer;
 	background-color: #48a05f;
 }
 

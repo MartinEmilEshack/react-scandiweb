@@ -21,6 +21,7 @@
 }
 
 #CurrencyMenu:hover > #CurrencySelector {
+	cursor: pointer;
 	border-radius: 5px;
 	background-color: #ddd;
 }
@@ -53,5 +54,6 @@
 }
 
 #CurrencyMenu > #CurrencyList > li:hover {
+	cursor: pointer;
 	background-color: #ddd;
 }

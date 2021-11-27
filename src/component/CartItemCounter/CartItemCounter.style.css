@@ -19,6 +19,7 @@
 }
 
 #CartItemCount > button:hover {
+	cursor: pointer;
 	background-color: #ddd;
 }
 

@@ -39,11 +39,13 @@
 	right: 0;
 }
 
-#CartItemGallery > #Left:hover:enabled {
+#CartItemGallery > #Left:enabled:hover {
+	cursor: pointer;
 	background: linear-gradient(to left, transparent 12px, gray 100%);
 }
 
-#CartItemGallery > #Right:hover:enabled {
+#CartItemGallery > #Right:enabled:hover {
+	cursor: pointer;
 	background: linear-gradient(to right, transparent 12px, gray 100%);
 }
 

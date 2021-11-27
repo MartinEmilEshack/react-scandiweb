@@ -76,10 +76,12 @@
 }
 
 #Product > #ProductDescription > button:enabled:hover {
+	cursor: pointer;
 	background-color: #48a05f;
 }
 
 #Product > #ProductDescription > button:disabled {
+	cursor: not-allowed;
 	background-color: #a3caad;
 }
 

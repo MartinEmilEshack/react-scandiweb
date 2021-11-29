@@ -86,8 +86,9 @@
 }
 
 #Product > #ProductDescription > #Description * {
-	all: revert;
-	color: #1d1f22;
+	margin: revert;
+	padding: revert;
+	font-style: revert;
 	font-family: Roboto;
 	line-height: 159.96%;
 }

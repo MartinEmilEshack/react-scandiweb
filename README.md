@@ -23,6 +23,6 @@ This is my Junior React Developer test project, which I'm really proud to have r
 
 3. Adding a product to cart from the "Products List" page defaults to the first attributes values of this product. I hope this is the required behavior.
 
-4. Product Attributes in the "Cart" now have thier label associated with them so they have more meaning in case of "Yes" and "No" values, But I had to figure out a design. I hope It's good enough.
+4. Product attributes in the "Cart" now have thier name associated with them so they have more meaning in case of "Yes" and "No" values, But I had to figure out a design. I hope It's good enough.
 
 ### Thanks again.

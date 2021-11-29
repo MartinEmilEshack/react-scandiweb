@@ -67,8 +67,8 @@
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 120%;
-	color: white;
 	text-transform: uppercase;
+	color: white;
 
 	border: none;
 	background-color: #5ece7b;
@@ -86,9 +86,8 @@
 }
 
 #Product > #ProductDescription > #Description * {
+	all: revert;
+	color: #1d1f22;
 	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
 	line-height: 159.96%;
 }

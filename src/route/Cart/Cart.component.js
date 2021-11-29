@@ -26,7 +26,7 @@ class Cart extends Component {
 				{cartItems}
 				<hr />
 				<div id='TotalPrice'>
-					<h2>Total</h2>
+					<h2>Total:</h2>
 					<PriceTag total />
 					<button
 						id='Checkout'

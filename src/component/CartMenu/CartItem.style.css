@@ -36,18 +36,6 @@
 	> #ItemAttributes
 	> #SelectedAttributes
 	> #Item {
-	min-width: fit-content;
+	min-width: 24px;
 	height: 24px;
-}
-
-#CartMenu #CartItem > #CartItemCount {
-	flex: 0 0 24px;
-}
-
-#CartMenu #CartItem > #CartItemCount > button {
-	flex: 0 0 24px;
-}
-
-#CartMenu #CartItem > #CartItemGallery {
-	flex: 0 0 105px;
 }

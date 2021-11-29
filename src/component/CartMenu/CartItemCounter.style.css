@@ -1,3 +1,12 @@
+#CartMenu #CartItemCount {
+	flex: 0 0 24px;
+	font-weight: 16px;
+}
+
+#CartMenu #CartItemCount > button {
+	flex: 0 0 24px;
+}
+
 #CartMenu #CartItemCount > button > #PlusVerticalSign,
 #CartMenu #CartItemCount > button > #PlusHorizontalSign {
 	width: 8px;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
+import parse from 'html-react-parser';
 import ProductAttribute from '../../component/ProductAttribute';
 import ProductGallery from '../../component/ProductGallery';
 import PriceTag from '../../component/PriceTag';
@@ -83,7 +84,7 @@ class Product extends Component {
 						disabled={!product.inStock}
 						onClick={this.addProductToCart.bind(this)}
 					>{product.inStock ? 'add to cart' : 'out of stock'}</button>
-					<div id='Description' dangerouslySetInnerHTML={{ __html: product.description }} />
+					<div id='Description'>{parse(product.description)}</div>
 				</div>
 			</div>
 		);
